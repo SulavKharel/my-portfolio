@@ -1,0 +1,189 @@
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.5em;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  background-color: rgba(0,0,0,0.03)
+}
+
+p {
+  padding: 20px;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  max-width: 1000px;
+  margin:auto;
+}
+
+.icons {
+  display: flex;
+}
+
+.icon {
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: grey;
+}
+
+.icon:hover {
+  font-size: 1.4em;
+  color: rgba(0,0,0,0.4);
+}
+
+.icon-lg {
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 3em;
+  color: grey;
+}
+
+.box {
+  text-align:center;
+  vertical-align: middle;
+  margin:0px 30px;
+}
+
+.header {
+  text-align: center;
+  margin: 150px 0px;
+}
+
+.main {
+  background-color: white;
+  margin: 100px 20px;
+  border-radius: 8px;
+}
+
+.intro {
+  padding: 40px;
+}
+
+.intro h2 {
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  margin: 0px 100px;
+}
+
+.skills {
+  padding: 40px;
+}
+
+.skill-list {
+  margin:50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skill {
+  padding: 30px;
+  margin: 1px 8px;
+}
+
+
+.skills h2 {
+  border-bottom: 0.1px solid rgba(0,0,0,0.3);
+  margin: 0px 100px;
+}
+
+.projects {
+  text-align:center;
+  padding: 40px;
+}
+
+.projects h2 {
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  margin: 0px 100px;
+}
+
+/*Lewagon css*/
+.card-product {
+  overflow: hidden;
+  height: 140px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+.card-product-infos a{
+  text-decoration: none;
+  color: black;
+}
+/*cards grid*/
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-gap: 16px;
+  height: 500px;
+}
+
+.card-category {
+  padding-top:25px;
+  background-color: rgba(200,200,200,0.1);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
