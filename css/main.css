@@ -11,6 +11,7 @@ p {
   padding: 20px;
   font-size: 1.2em;
   font-family: 'Roboto', sans-serif;
+  color: rgba(0,0,0,0.7);
 }
 
 html {
@@ -34,15 +35,16 @@ html {
 }
 
 .icon:hover {
-  font-size: 1.4em;
-  color: rgba(0,0,0,0.4);
+  font-size: 1.3em;
+  color: rgba(0,0,0,0.5);
 }
 
 .icon-lg {
   margin: 0 5px;
   text-decoration: none;
   font-size: 3em;
-  color: grey;
+  color: #305252;
+  opacity: 0.9;
 }
 
 .box {
@@ -71,6 +73,15 @@ html {
   margin: 0px 100px;
 }
 
+/*.text-display {
+  opacity: 0;
+}
+
+.text-display:hover {
+  opacity: 1;
+  transition: 0.5s ease-out;
+}*/
+
 .skills {
   padding: 40px;
 }
@@ -82,6 +93,7 @@ html {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .skill {
   padding: 30px;
   margin: 1px 8px;
@@ -91,6 +103,12 @@ html {
 .skills h2 {
   border-bottom: 0.1px solid rgba(0,0,0,0.3);
   margin: 0px 100px;
+}
+
+.skill h3 {
+  color: rgba(0,0,0,0.6);
+  font-weight: lighter;
+  margin: 8px auto;
 }
 
 .projects {
@@ -189,6 +207,14 @@ html {
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: auto 40px;
   }
+
+ .card-product h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
+}
+
 }
