@@ -181,6 +181,25 @@ html {
   .cards {
     grid-template-columns: 1fr;
   }
+  .skills {
+    display: none;
+  }
+  .intro {
+    text-align: center;
+    padding: 0px;
+  }
+  .intro h2 {
+    margin: 0px;
+  }
+  .projects {
+    padding:0px;
+  }
+  .projects h2 {
+    margin: 0px;
+  }
+  .projects p {
+    padding: 0px;
+  }
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
